@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/edittext_rectangle"
+            android:ems="10"
+            android:id="@+id/txtServerAddress"
+            android:textSize="33sp"
+            android:text="Server Address"
+            android:gravity="center" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/logout_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:padding="12dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_below="@+id/txtServerAddress"
+        android:text="Logout"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:id="@+id/imgProfilePhoto"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/img_female"
+            android:layout_below="@+id/txtServerAddress"
+            android:layout_alignLeft="@+id/txtServerAddress"
+            android:layout_alignStart="@+id/txtServerAddress"
+            android:layout_above="@+id/txtPublicKey"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp" />
+
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/register_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:padding="12dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Register new user"
+        />
+<!--
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/edittext_rectangle"
+        android:ems="10"
+        android:id="@+id/txtKeyPair"
+        android:hint="Server Address"
+        android:textSize="33sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Public/Private Key Pair" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/edittext_rectangle"
+        android:ems="10"
+        android:id="@+id/txtPublicKey"
+        android:textSize="33sp"
+        android:layout_above="@+id/txtKeyPair"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="Name"
+        android:gravity="center" />
+
+
+    />-->
+
+
+</RelativeLayout>

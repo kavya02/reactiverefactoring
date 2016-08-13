@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/existedlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/relHeader"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:background="@color/background_material_dark">
+
+            <ImageView
+                android:id="@+id/imgPlus"
+                android:layout_width="@dimen/fivefive"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_plus"
+                android:padding="5dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Contacts"
+                android:id="@+id/textView2"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textSize="35sp"
+                android:textColor="#ffffff"
+                android:layout_toLeftOf="@+id/imgPlus"
+                android:layout_toStartOf="@+id/imgPlus"
+                android:gravity="center" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="10dp"
+            android:id="@+id/relativeLayout2">
+
+            <EditText
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:id="@+id/etxtFilter"
+                android:layout_weight="1"
+                android:textSize="33sp"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/imgFilter"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:gravity="center_vertical"
+                android:background="@drawable/edittext_rectangle"
+                android:layout_marginRight="10dp"
+                android:paddingLeft="15dp" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgFilter"
+                android:src="@drawable/ic_filler"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignBottom="@+id/etxtFilter" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp">
+
+            <ListView
+                android:id="@+id/listContact"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical"
+                android:padding="10dp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>
